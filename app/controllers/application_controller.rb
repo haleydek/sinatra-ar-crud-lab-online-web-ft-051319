@@ -25,6 +25,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  patch '/articles/:id' do
+    
+  end
+  
   get '/articles/:id' do
     @article = Article.find(params[:id])
     erb :show
