@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/articles' do
-    Article.create(title: params[:article][:title], content: params[:article][:content])
+    Article.create(params[:article][:title], params[:article][:content])
     erb :index
   end
 end
