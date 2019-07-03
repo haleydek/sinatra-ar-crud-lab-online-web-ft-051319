@@ -16,6 +16,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles' do
+    @articles = Articles.all
     erb :index
   end
   
