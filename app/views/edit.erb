@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <form action='/articles/<%= @article.id %>' method='post'>
+    
     <input id='hidden' type='hidden' name='_method' value='patch'>
     <input type='submit' value='submit'>
   </form>
